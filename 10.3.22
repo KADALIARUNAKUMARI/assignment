@@ -1,0 +1,10 @@
+create table university1(regid number(4)primary key,studentname varchar2(20),gender char(1),year number(4),collegename varchar2(30));
+select * from university1;
+
+     REGID STUDENTNAME          G       YEAR COLLEGENAME
+---------- -------------------- - ---------- ------------------------------
+       101 aruna                f          1 awdckkd
+       102 stya                 f          2 awdckkd
+       103 ramu                 m          3 awdckkd
+       104 sairam               f          2 adckkd
+       105 dhana                f          3 adckkd
