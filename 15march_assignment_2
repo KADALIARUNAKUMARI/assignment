@@ -1,0 +1,42 @@
+SQL> insert into registration values(&redno,'&name','&gender','&qualification',&age);
+SQL> select *from registration;
+
+     REDNO CANDNAME                       GENDER  QUALIFICATION
+---------- ------------------------------ ------- --------------------
+       AGE
+----------
+       101 aruna                          female  mba
+        22
+
+       102 ramu                           male    mca
+        25
+
+       103 rahul                          male    btech
+        26
+
+
+     REDNO CANDNAME                       GENDER  QUALIFICATION
+---------- ------------------------------ ------- --------------------
+       AGE
+----------
+       104 bindu                          female  mtech
+        26
+
+       105 yashvanth                      male    bsc
+        27
+
+
+SQL> select *from registration where gender='male';
+
+     REDNO CANDNAME                       GENDER  QUALIFICATION
+---------- ------------------------------ ------- --------------------
+       AGE
+----------
+       102 ramu                           male    mca
+        25
+
+       103 rahul                          male    btech
+        26
+
+       105 yashvanth                      male    bsc
+        27
