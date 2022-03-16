@@ -1,0 +1,154 @@
+select * from apsrtc;
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1100       luxury               vskp            kkd                    350
+          50
+
+1101       luxury               hyd             vsp                    500
+         850
+
+1102       express              hyd             rjy                    650
+         100
+
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1003       passinger            kkd             hyd                    800
+         100
+
+1105       express              hyd             kotipalli              900
+         100
+
+1106       passinger            rjy             kkd                     50
+          50
+
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1107       express              vsk             smlkt                  450
+          50
+
+1108       luxury               yanam           ptp                     78
+          50
+
+1109       express              amalapurm       kkd                     90
+          50
+
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1110       passinger            vsp             hyd                    780
+         900
+
+1111       luxury               vzg             hyd                    890
+        1050
+        update apsrtc set ticket_price=100 where kms > 500;
+        SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1100       luxury               vskp            kkd                    350
+          50
+
+1101       luxury               hyd             vsp                    500
+         850
+
+1102       express              hyd             rjy                    650
+         100
+
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1003       passinger            kkd             hyd                    800
+         100
+
+1105       express              hyd             kotipalli              900
+         100
+
+1106       passinger            rjy             kkd                     50
+          50
+
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1107       express              vsk             smlkt                  450
+          50
+
+1108       luxury               yanam           ptp                     78
+          50
+
+1109       express              amalapurm       kkd                     90
+          50
+
+update apsrtc set ticket_price=50 where kms < 500;
+
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1110       passinger            vsp             hyd                    780
+         100
+
+1111       luxury               vzg             hyd                    890
+         100
+         SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1003       passinger            kkd             hyd                    800
+         100
+
+1105       express              hyd             kotipalli              900
+         100
+
+1106       passinger            rjy             kkd                     50
+          50
+
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1107       express              vsk             smlkt                  450
+          50
+
+1108       luxury               yanam           ptp                     78
+          50
+
+1109       express              amalapurm       kkd                     90
+          50
+
+
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1110       passinger            vsp             hyd                    780
+         100
+
+1111       luxury               vzg             hyd                    890
+         100
+select * from apsrtc where boarding='vzg' and upto='hyd';
+SERVICE_NO SERVICE_TYPE         BOARDING        UPTO                   KMS
+---------- -------------------- --------------- --------------- ----------
+TICKET_PRICE
+------------
+1111       luxury               vzg             hyd                    890
+         100
+
+         
+        
