@@ -11,3 +11,4 @@ SQL> desc apsrtc;
  UPTO                                               VARCHAR2(15)
  KMS                                                NUMBER(5)
  TICKET_PRICE                                       NUMBER(5)
+insert into apsrtc values('&service_num','&service_type','&boarding','&upto',&kms,&price);
