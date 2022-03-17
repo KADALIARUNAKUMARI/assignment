@@ -1,0 +1,9 @@
+create table restaurant(billid int,custname varchar2(30),phno number(10),amount number(5));x
+create sequence code  start with 100001    increment by 1 minvalue 100001 maxvalue 100050 cycle;
+ desc restaurant;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BILLID                                             NUMBER(38)
+ CUSTNAME                                           VARCHAR2(30)
+ PHNO                                               NUMBER(10)
+ AMOUNT                                             NUMBER(5)
