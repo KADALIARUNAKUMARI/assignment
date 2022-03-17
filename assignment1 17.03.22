@@ -1,0 +1,25 @@
+ select *from restaurant where custname like 'j%';
+
+    BILLID CUSTNAME                             PHNO     AMOUNT
+---------- ------------------------------ ---------- ----------
+    100008 joshna                            8745632         90
+    100009 james                           784561235         80
+    100010 jyothi                         9704276663         50
+    100011 jaya                              2345678         66
+    
+    
+     select *from restaurant order by custname desc;
+       BILLID CUSTNAME                             PHNO     AMOUNT
+---------- ------------------------------ ---------- ----------
+    100005 satya                           996325874        150
+    100007 raghu                          9704275555         60
+    100006 meena                          9988774422        100
+    100004 lohita                         9966554433        100
+    100010 jyothi                         9704276663         50
+    100008 joshna                            8745632         90
+    100011 jaya                              2345678         66
+    100009 james                           784561235         80
+    100002 honey                          9963231029         40
+    100001 aruna                           789456123         50
+
+10 rows selected.
