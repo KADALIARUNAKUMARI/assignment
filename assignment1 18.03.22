@@ -1,0 +1,100 @@
+create table stud(regno number(4) primary key,sname varchar2(30),grp varchar2(10),email_id varchar2(30),phno number(10));
+desc stud;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REGNO                                     NOT NULL NUMBER(4)
+ SNAME                                              VARCHAR2(30)
+ GRP                                                VARCHAR2(10)
+ EMAIL_ID                                           VARCHAR2(30)
+ PHNO                                               NUMBER(10)
+ 
+ 
+  create table exam(regno number(4) references stud(regno),s1 number(3),s2 number(3),s3 number(3),total number(5),avg number(5,2));
+  
+  desc exam;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REGNO                                              NUMBER(4)
+ S1                                                 NUMBER(3)
+ S2                                                 NUMBER(3)
+ S3                                                 NUMBER(3)
+ TOTAL                                              NUMBER(5)
+ AVG                                                NUMBER(5,2)
+ select * from stud;
+
+     REGNO SNAME                          GRP
+---------- ------------------------------ ----------
+EMAIL_ID                             PHNO
+------------------------------ ----------
+      1111 aruna                          b.com
+abc@gmail.com                  9963231029
+
+      1112 nani                           bsc
+xyz@gmail.com                  1122334455
+
+      1113 satya                          bbc
+aditya@gmail.com               7894563215
+
+
+     REGNO SNAME                          GRP
+---------- ------------------------------ ----------
+EMAIL_ID                             PHNO
+------------------------------ ----------
+      1114 honey                          bsc
+honey@gmail.com                4563217895
+
+      1115 lohitha                        bsc
+lohi@gmail.com                 1234567895
+
+      1116 bhavani                        mbc
+bhavani@gmail.com              1236547898
+
+
+     REGNO SNAME                          GRP
+---------- ------------------------------ ----------
+EMAIL_ID                             PHNO
+------------------------------ ----------
+      1117 pavani                         mscs
+pavani@gmail.com               3698521475
+
+      1118 meena                          mpcs
+meena@gmail.com                6547891235
+
+      1119 ramu                           mpcs
+ramu@gmail.com                 7894563214
+
+
+     REGNO SNAME                          GRP
+---------- ------------------------------ ----------
+EMAIL_ID                             PHNO
+------------------------------ ----------
+      1120 sairam                         mecs
+sairam@gmail.com               9966322547
+ select * from exam;
+
+     REGNO         S1         S2         S3      TOTAL        AVG
+---------- ---------- ---------- ---------- ---------- ----------
+      1111         56         89         74
+      1112         89         78         98
+      1113         96         85         75
+      1114         85         65         75
+      1115         78         87         57
+      1116         69         58         57
+      1117         64         48         49
+      1118         97         87         84
+      1119         87         94         58
+      1120         47         48         79
+       select * from exam;
+
+     REGNO         S1         S2         S3      TOTAL        AVG
+---------- ---------- ---------- ---------- ---------- ----------
+      1111         56         89         74        219         73
+      1112         89         78         98        265      88.33
+      1113         96         85         75        256      85.33
+      1114         85         65         75        225         75
+      1115         78         87         57        222         74
+      1116         69         58         57        184      61.33
+      1117         64         48         49        161      53.67
+      1118         97         87         84        268      89.33
+      1119         87         94         58        239      79.67
+      1120         47         48         79        174         58
