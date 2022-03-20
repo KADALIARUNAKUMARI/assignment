@@ -1,0 +1,13 @@
+create table shoppingmall(billid number(4),custname varchar2(25),phno number(10),billamount number(8,2));
+insert into shoppingmall values(&bill,'&name',&phno,&amount);
+select * from shoppingmall;
+
+ select sum(billamount) from shoppingmall;
+
+ select max(billamount) from shoppingmall;
+
+select min(billamount) from shoppingmall;
+
+select avg(billamount) from shoppingmall;
+
+select count(custname) from shoppingmall;
