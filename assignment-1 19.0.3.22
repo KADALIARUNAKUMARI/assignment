@@ -1,0 +1,15 @@
+create table shoppingmall(billid number(4),custname varchar2(25),phno number(10),billamount number(8,2));
+
+SQL> insert into shoppingmall values(&bill,'&name',&phno,&amount);
+
+SQL> select * from shoppingmall;
+
+SQL> select sum(billamount) from shoppingmall;
+
+SQL> select max(billamount) from shoppingmall;
+
+SQL> select min(billamount) from shoppingmall;
+
+SQL> select avg(billamount) from shoppingmall;
+
+SQL> select count(custname) from shoppingmall;
