@@ -1,0 +1,25 @@
+create table student(sno number(3),sname varchar2(10),m number(3),p number(3),cs number(3),total number(5),avg number(5,2));
+
+SQL> create table stud_details(sno number(3),sname varchar2(10),m number(3),p number(3),cs number(3),total number(5),avg number(5,2));
+
+SQL> insert into student(sno,sname,m,p,cs) values(&sno,'&sname',&m,&p,&cs);
+
+SQL> select * from student;
+
+SQL> update student set total=m+p+cs,avg=(m+p+cs)/3;
+
+SQL> select * from student;
+
+SQL> insert into stud_details(sno,sname,m,p,cs) values(&sno,'&sname',&m,&p,&cs);
+
+SQL> select * from stud_details;
+
+SQL> update stud_details set total=m+p+cs ,avg=(m+p+cs)/3;
+
+SQL> select * from stud_details;
+
+SQL> select * from student union select * from stud_details;
+
+SQL> select * from student intersect select * from stud_details;
+
+SQL> select * from student minus select * from stud_details;
