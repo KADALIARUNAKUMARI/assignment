@@ -1,0 +1,34 @@
+ declare
+  2    x int;
+  3      begin
+  4      update emp set empsal=empsal+6500 where empsal>40000 and empsal<65000;
+  5      if sql%notfound then
+  6      dbms_output.put_line('not updated');
+  7      elsif sql%found then
+  8      x:=sql%rowcount;
+  9      dbms_output.put_line(x||'  emp salaries updated');
+ 10    end if;
+ 11    end;
+ 12  /
+3  emp salaries updated
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from emp;
+
+     EMPNO EMPNAME              EMPDESIG                 EMPSAL
+---------- -------------------- -------------------- ----------
+      1111 sairam               mgmt                      69500
+      1112 lokesh               clerk                     30000
+      1113 mahesh               attender                   6000
+      1114 vardhan              clerk                     35000
+      1115 kailash              clerk                     33000
+      1116 kalyai               steno                     40000
+      1117 meena                genmgmt                   51500
+      1118 rao                  clerk                     33000
+      1119 ramesh               clerk                     48500
+      1120 raghu                supervisior               36000
+
+10 rows selected.
+
+SQL>
